@@ -14,6 +14,8 @@
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
+        {{--PWA assets--}}
+        @laravelPWA
     </head>
     <body class="font-sans antialiased">
         @inertia

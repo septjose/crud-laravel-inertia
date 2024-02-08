@@ -35,3 +35,7 @@ Route::middleware([
     })->name('dashboard');
     Route::resource('projects', ProjectController::class);
 });
+
+Route::get('/offline', function(){
+    return view('vendor.laravelpwa.offline');
+});
